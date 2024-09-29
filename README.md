@@ -4,10 +4,15 @@
 
 ```bash
 git clone https://github.com/im-javad/address-register.git
+```
+
+### 2.Go to Project:
+
+```bash
 cd next-app
 ```
 
-### 2.Install Dependencies:
+### 3.Install Dependencies:
 
 ```bash
 npm install
@@ -15,7 +20,7 @@ npm install
 yarn install
 ```
 
-### 3.Run the Project:
+### 4.Run the Project:
 
 ```bash
 npm run dev
