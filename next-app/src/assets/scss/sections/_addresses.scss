@@ -4,9 +4,9 @@ section#addresses {
     margin-top: 111px;
   }
   .container {
-    padding-left: 0;
-    padding-right: 0;
     @media (min-width: $breakpoint-xl) {
+      padding-left: 0;
+      padding-right: 0;
       max-width: 806px;
     }
     .head {
@@ -97,6 +97,9 @@ section#addresses {
             @media (min-width: $breakpoint-xl) {
               margin-bottom: 14px;
             }
+          }
+          strong {
+            width: 100%;
           }
         }
         .phone-number {

@@ -15,7 +15,7 @@ const SuccessRegister = () => {
           <span>اطلاعات شما با موفقیت ثبت شد</span>
         </div>
         <div className="redirect">
-          <Link href={"/addresses"}>
+          <Link href={"/addresses"} className="link">
             <button>مشاهده اطلاعات</button>
           </Link>
         </div>

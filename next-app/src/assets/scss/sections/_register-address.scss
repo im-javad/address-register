@@ -233,8 +233,6 @@ section#register-address {
         @media (min-width: $breakpoint-xl) {
           display: none;
         }
-        .back-icon {
-        }
         .mobile-title {
           position: absolute;
           left: 50%;
@@ -288,6 +286,7 @@ section#register-address {
             width: 100%;
             box-shadow: 0px 2px 6px 0px #00000040;
             .title {
+              display: none;
               position: absolute;
               top: 0;
               background-color: $background_white;
@@ -296,6 +295,9 @@ section#register-address {
               border-radius: 4px 4px 0px 0px;
               padding-top: 10px;
               padding-bottom: 10px;
+              @media (min-width: $breakpoint-xl) {
+                display: block;
+              }
               span {
                 font-size: 1.2rem;
                 line-height: 32px;
@@ -305,6 +307,7 @@ section#register-address {
               }
             }
             .desktop-show-my-location {
+              display: none;
               position: absolute;
               z-index: 1000;
               bottom: 0;
@@ -342,19 +345,22 @@ section#register-address {
         }
       }
       .redirect {
-        display: flex;
-        justify-content: center;
-        button {
+        .link {
           width: 100%;
-          border: 1.5px solid $primary_color;
-          color: $primary_color;
-          border-radius: 4px;
-          font-weight: 700;
-          font-size: 1.6rem;
-          line-height: 25px;
-          padding: 12px;
-          @media (min-width: $breakpoint-xl) {
-            width: 341px;
+          display: flex;
+          justify-content: center;
+          button {
+            width: 100%;
+            border: 1.5px solid $primary_color;
+            color: $primary_color;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 25px;
+            padding: 12px;
+            @media (min-width: $breakpoint-xl) {
+              width: 341px;
+            }
           }
         }
       }
@@ -373,6 +379,7 @@ section#register-address {
       padding: 19px;
     }
     .btn-self {
+      width: 100%;
       min-height: 49px;
       font-size: 1.6rem;
       font-weight: 700;
@@ -381,9 +388,11 @@ section#register-address {
       background-color: $primary_color;
       border-radius: 4px;
       border: 0;
-      width: 224px;
       padding-top: 12px;
       padding-bottom: 12px;
+      @media (min-width: $breakpoint-xl) {
+        width: 224px;
+      }
       .loader {
         position: relative;
         top: -41px;
