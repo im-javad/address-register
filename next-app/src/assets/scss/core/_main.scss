@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; //? 1rem = 10px
+}
+body , * {
+  font-family: "Vazir" !important;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+input {
+  &:focus-visible {
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    border: none;
+    background: none;
+  }
+}
+
+body,
+html {
+  direction: rtl;
+  background-color: $background_main;
+}
+
+.leaflet-top,
+.leaflet-left {
+  display: none;
+}
+.leaflet-bottom,
+.leaflet-right {
+  display: none;
+}

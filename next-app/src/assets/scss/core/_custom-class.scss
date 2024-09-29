@@ -1,0 +1,30 @@
+.primary-color {
+  color: $primary_color;
+}
+.text-color {
+  color: $text_color;
+}
+
+.mb-xl-38 {
+  @media (min-width: $breakpoint-xl) {
+    margin-bottom: 38px !important;
+  }
+}
+.mb-xl-52 {
+  @media (min-width: $breakpoint-xl) {
+    margin-bottom: 52px !important;
+  }
+}
+
+.ml-xl-22 {
+  @media (min-width: $breakpoint-xl) {
+    margin-left: 22px;
+  }
+}
+
+.error-border {
+  border: 1px solid $secondary_color !important;
+}
+.success-border {
+  border: 1px solid $primary_color !important;
+}

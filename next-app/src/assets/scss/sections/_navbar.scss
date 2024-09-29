@@ -1,0 +1,47 @@
+nav#navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $background_white;
+  .container {
+    .head {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (min-width: $breakpoint-xl) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+      .logo {
+        .image-icon {
+          @media (min-width: $breakpoint-xl) {
+            width: 70px;
+            height: 39px;
+          }
+        }
+      }
+      .links {
+        display: flex;
+        .register-link,
+        .addresses-link {
+          font-size: 1.25rem;
+          line-height: 19.53px;
+          font-weight: 700;
+          @media (min-width: $breakpoint-xl) {
+            font-size: 1.4rem;
+            line-height: 21.88px;
+          }
+        }
+        .addresses-link {
+          margin-right: 21px;
+          @media (min-width: $breakpoint-xl) {
+            margin-right: 28px;
+          }
+        }
+      }
+    }
+  }
+}

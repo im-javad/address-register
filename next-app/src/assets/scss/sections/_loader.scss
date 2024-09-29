@@ -1,0 +1,23 @@
+.loader-wrapper {
+  .loader {
+    z-index: 10000;
+    position: absolute;
+    width: 100%;
+    left: 45%;
+    top: 45%;
+    transform: translate(-45%, -45%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .loader-icon {
+      width: 100%;
+    }
+    .loader-title {
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+      color: $text_color;
+      font-size: 1.4rem;
+    }
+  }
+}
